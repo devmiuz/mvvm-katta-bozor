@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVMKattabozor</string>
+    <string name="offer_details_toolbar_title">Tafsilotlar</string>
+    <string name="toolbar_offer_list_title">Takliflar</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/offerListFragment">
+
+    <fragment
+        android:id="@+id/offerListFragment"
+        android:name="uz.devmi.mvvmkattabozor.offer.presentation.list.OfferListFragment"
+        android:label="OfferListFragment"
+        tools:layout="@layout/offer_list_fragment">
+        <action
+            android:id="@+id/action_offerListFragment_to_offerDetailFragment"
+            app:destination="@id/offerDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/offerDetailFragment"
+        android:name="uz.devmi.mvvmkattabozor.offer.presentation.detail.OfferDetailFragment"
+        android:label="OfferDetailFragment"
+        tools:layout="@layout/offer_detail_fragment">
+        <argument
+            android:name="offerId"
+            android:defaultValue="-1"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>
